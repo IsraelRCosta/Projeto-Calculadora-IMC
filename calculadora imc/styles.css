@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do body para ocupar toda a tela */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9); /* Fundo azul degradê bonito */
+  }
+  
+  /* Container principal da calculadora */
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Estilo dos campos */
+  .form-group {
+    margin: 10px 0;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  /* Botão */
+  button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Resultado */
+  #resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+  }
+  
+  /* Footer fixado embaixo */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px 0;
+  }
+
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  /* Centraliza as imagens abaixo do parágrafo */
+  footer a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* Estilo das imagens */
+  footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* deixa redonda */
+    object-fit: cover;
+    background-color: white; /* fundo branco para ficar bonito */
+    padding: 5px; /* espaço interno */
+    transition: transform 0.3s ease;
+  }
+  
+  /* Efeito de zoom ao passar o mouse */
+  footer img:hover {
+    transform: scale(1.1);
+  }
+  
